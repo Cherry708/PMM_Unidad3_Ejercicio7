@@ -7,60 +7,78 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tvTitulo0"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="¿Cual es su nombre?"
-        android:textSize="20sp"
+        android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/etNombre0"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="32dp"
         android:ems="10"
         android:hint="Su nombre aqui"
         android:inputType="textPersonName"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/tvTitulo0" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/tvSexo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="Sexo:"
-        android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/etNombre0"
+        app:layout_constraintTop_toBottomOf="@+id/etNombre0" />
 
     <RadioGroup
+        android:id="@+id/rgSexo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:orientation="horizontal"
-        app:layout_constraintStart_toStartOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/textView2">
+        app:layout_constraintStart_toStartOf="@+id/tvSexo"
+        app:layout_constraintTop_toBottomOf="@+id/tvSexo">
 
         <RadioButton
-            android:id="@+id/radioButton5"
+            android:id="@+id/rbSenor"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
             android:layout_weight="1"
-            android:text="Señor" />
+            android:text="Señor"
+            android:textSize="20sp" />
 
         <RadioButton
-            android:id="@+id/radioButton6"
+            android:id="@+id/rbSenora"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
             android:layout_weight="1"
-            android:text="Señora" />
+            android:text="Señora"
+            android:textSize="20sp" />
     </RadioGroup>
+
+    <Button
+        android:id="@+id/btnAceptar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Aceptar"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rgSexo" />
 </androidx.constraintlayout.widget.ConstraintLayout>
