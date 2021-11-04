@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PMM_Unidad3_Ejercicio7">
         <activity
+            android:name=".Horoscopo"
+            android:exported="true" />
+        <activity
             android:name=".FechaNacimiento"
             android:exported="true" />
         <activity
